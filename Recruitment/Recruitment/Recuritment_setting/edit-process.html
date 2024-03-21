@@ -1,0 +1,277 @@
+
+<form action="" id="processform">
+  <div class="row">
+      <div class="col-md-12">
+          <div class="purchasegrp">
+              <label class="purchaseinfo mar15" ><span class=" aster">* </span> Order
+                  <i class="fa fa-question-circle icn-mrg" data-bs-toggle="tooltip" data-placement="top" title="" data-bs-title="The process sends an email of transferring personnel files will be in this order!" ></i>
+              </label>
+              <input type="number" class="form-control purchaseselects" name="order">
+              
+          </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+        <div class="purchasegrp">
+            <label for="func" class="purchaseinfo mb-1"><span class=" aster">* </span>Send to</label>
+            <select id="func" class="selectpicker form-control" title="None Selected" name="PayAcc" onchange="myFunction()">
+              <option value=""></option>
+              <option value="Successful candidates">Successful candidates
+              </option>
+              <option value="Staff">Staff
+              </option>
+              <option value="Department">Department
+              </option>
+               
+            </select>
+        </div>
+    </div>
+</div>
+ 
+    <!-- new test -->
+    <div id="hii" class="row " style="display:none;">
+      <div class="col-md-12">
+          <div class="purchasegrp">
+            <label class="purchaseinfo" 
+            ><span class=" aster">* </span>Email to</label
+          >
+          <select
+        class="selectpicker multiselect form-control"
+        name="PayAcc"
+        data-name="name"
+        multiple
+        data-actions-box="true"
+        data-live-search="true"
+      >
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+        <option value="36" data-subtext="">prod</option>
+        <option value="38" data-subtext="">elis</option>
+        <option value="41" data-subtext="">iofyds</option>
+       
+      </select>
+          </div>
+      </div>
+  </div>
+
+  <div id="hlo" class="row " style="display:none;">
+    <div class="col-md-12">
+        <div class="purchasegrp">
+          <label class="purchaseinfo"
+          ><span class=" aster">* </span>Email to</label
+        >
+        <select
+      class="selectpicker multiselect form-control"
+      name="PayAcc"
+      data-name="name"
+      multiple
+      data-actions-box="true"
+      data-live-search="true"
+    >
+      <option value="36" data-subtext="">prodss</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+      <option value="36" data-subtext="">prod</option>
+      <option value="38" data-subtext="">elis</option>
+      <option value="41" data-subtext="">iofyds</option>
+     
+    </select>
+        </div>
+    </div>
+</div>
+  
+
+ 
+    
+
+ 
+
+    <!-- new test -->
+  
+  <div class="row ">
+      <div class="col-md-12">
+          <div class="purchasegrp">
+              <label class="purchaseinfo"><span class=" aster">* </span>Subject</label>
+              <input type="text" class="form-control purchaseselects" name="sub">
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="purchasegrp">
+              <label for="name" class="emailpro">Content</label>
+              <div id="summernote"></div>
+          </div>
+      </div>
+  </div>
+  <div class="row ">
+      <div class="col-md-12">
+          <div class=" excfnthr">
+              <label for="" class="excfllbl">Attachment</label>
+              <div class="input-group d-flex flex-nowrap">
+                  <input type="file" class="chooseexcfle">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 blkftr">
+          <div class="modal-footer taskfooter">
+              <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                  CLOSE
+              </button>
+              <button type="submit" class="tasksave1 save1" >SAVE</button>
+          </div>
+      </div>
+  </div>
+</form>
+<script>
+ 
+var gcs = document.getElementById("hii");
+var gcs1 = document.getElementById("hlo");
+
+function myFunction(){
+
+var x = document.getElementById("func").value;
+
+if (x === "Staff") {
+    gcs.style.display = "block";
+    gcs1.style.display = "none";
+  
+
+} 
+else if (x === "Department"){
+    gcs1.style.display = "block";
+    gcs.style.display = "none";
+   
+} 
+else if (x === "Successful candidates"){
+  gcs1.style.display = "none";
+  gcs.style.display = "none";
+ 
+}
+
+}
+
+
+</script>
+
+
+
+
+      <!-- summernote -->
+      <script>
+          $('#summernote').summernote({
+              placeholder: '',
+              tabsize: 2,
+              height: 100
+          });
+      </script>
+      <script>
+          $('#processform').formValidation({
+              framework: 'bootstrap',
+              fields: {
+      
+      
+                  order: {
+                      validators: {
+                          notEmpty: {
+                              message: 'This field is required.'
+                          }
+                      }
+                  },
+                  PayAcc: {
+                      validators: {
+                          notEmpty: {
+                              message: 'This field is required.'
+                          }
+                      }
+                  },
+                  send: {
+                      validators: {
+                          notEmpty: {
+                              message: 'This field is required.'
+                          }
+                      }
+                  },
+                  sub: {
+                      validators: {
+                          notEmpty: {
+                              message: 'This field is required.'
+                          }
+                      }
+                  },
+           
+              }
+          })
+      
+      </script>
+      <!--Multiselect-->
+  <script>
+      const dropdowns = document.querySelectorAll('.multiselect');
+
+      dropdowns.forEach(dropdown => {
+          const inputBox = document.createElement('input');
+          inputBox.type = 'hidden';
+          inputBox.classList.add('selected-values');
+          name = dropdown.getAttribute('data-name');
+          inputBox.setAttribute("name", name);
+          dropdown.after(inputBox);
+
+          dropdown.addEventListener('change', () => {
+              const selectedOptions = Array.from(dropdown.selectedOptions).map(option => option.value);
+              inputBox.value = selectedOptions.join(', ');
+          });
+      });
+  </script>
+        <!--Tooltip-->
+        <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+          });
+      </script>

@@ -1,0 +1,184 @@
+
+<form action="" id="evlfrm">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="h5text h5text1">General Details</h5>    
+        </div>
+    </div>
+    <hr class="hrclr1 hrline2" >
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo"><span class=" aster">* </span> Form Name</label>
+                <input type="text" class="form-control purchaseselects" name="fname">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="purchasegrp">
+                    <label for="tags" class="purchaseinfo mb-1">Job position</label>
+                    <select id="Depositto" class="selectpicker form-control" data-live-search="true" title="None Selected" >
+                        <option value="0"></option>
+                        <option value="1">Direct Labour</option>
+                        <option value="2">Purchase of Web Serve</option>
+                        <option value="3">Sales Revenue</option>
+                        <option value="4">Discounts/Refunds Given</option>
+                        <option value="5">56-s</option>
+                        <option value="6">0111-Rent Payble</option>
+                        <option value="7">Subhrajit Barman</option>
+                        <option value="8">Casa in lei</option>
+                        <option value="9">Raw Material</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="h5text h5text1 " >List of evaluation criteria</h5>    
+        </div>
+    </div>
+    <hr class="hrclr1 hs" >
+    <div class="row mb-2 banking-parent" id="parent">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="sub" class="purchaseinfo mb-1"><span class="aster">*</span>
+                    Group criteria</label>
+                <select class="selectpicker form-control" data-live-search="true" name="gc" title="None Selected">
+                    <option value="0">Description</option>
+                    <option value="1">Amount</option>
+                </select>
+            </div>
+        </div>
+        <div id="parent1" class="row addfrm" >
+        <div  class="row mb-2 banking-parent">
+            <div class="col-md-3">
+                <div class="purchasegrp">
+                    <label for="sub" class="purchaseinfo mb-1 evlcr" ><span class="aster">*</span>
+                       Evaluation criteria</label>
+                    <select class="selectpicker form-control" data-live-search="true" name="ec">
+                          <option value="0">Description</option>
+                          <option value="1">Amount</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="purchasegrp">
+                    <label class="purchaseinfo"><span class=" aster">* </span>Proportion(%)
+                    </label>
+                    <input type="number" class="form-control purchaseselects">
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="purchasegrp">
+                    <button id="add_btn" name="add" class="ctctgrnbtn banking-plus-btn btmrg" data-ticket="true"
+                        type="button"><i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-1">
+        <div class="purchasegrp ">
+            <button id="add_btn1" name="add" class="ctctgrnbtn banking-plus-btn" data-ticket="true"
+                type="button"><i class="fa fa-plus"></i></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 blkftr">
+            <div class="modal-footer taskfooter">
+                <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                    CLOSE
+                </button>
+                <button type="submit" class="tasksave1 save1" >SAVE</button>
+            </div>
+        </div>
+    </div>
+    
+</form>
+<script>$(document).ready(function () {
+    
+    $(document).on('click', '#add_btn2', function () {
+        $("#parent4").append('<div id="parent5" class="row mb-2 banking-parent"><div class="col-md-3"><div class="purchasegrp"><label for="sub" class="purchaseinfo mb-1"><span class="aster">* </span>Evaluation criteria</label><select class="selectpicker form-control" data-live-search="true"><option value="0">Description</option><option value="1">Amount</option></select></div></div><div class="col-md-3 save3" ><div class="purchasegrp"><label class="purchaseinfo "><span class=" aster">* </span> Proportion(%)</label><input type="number" class="form-control purchaseselects"></div></div><div class="col-md-1 hu"><div class="purchasegrp "><button id="remove_btn" name="add" class="closexbtn banking-min-btn" data-ticket="true" type="button"><i class="fa-solid fa-minus"></i></button></div></div> </div>');
+        $('.selectpicker').selectpicker('reresh')
+    });
+    $(document).on('click', '#remove_btn', function () {
+        $(this).closest('#parent5').remove();
+    });
+    
+});
+</script>
+
+    <script>$(document).ready(function () {
+        $("#add_btn").click(function () {
+            $("#parent1").append('<div id="parent2" class="row mb-2 banking-parent"><div class="col-md-3"><div class="purchasegrp"><label for="sub" class="purchaseinfo mb-1"><span class="aster">* </span>Evaluation criteria</label><select class="selectpicker form-control" data-live-search="true"><option value="0">Description</option><option value="1">Amount</option></select></div></div><div class="col-md-3 save" ><div class="purchasegrp"><label class="purchaseinfo marg4"><span class=" aster">* </span> Proportion(%)</label><input type="number" class="form-control purchaseselects margs5"></div></div><div class="col-md-1 hu"><div class="purchasegrp "><button id="remove_btn" name="add" class="closexbtn banking-min-btn rebt" data-ticket="true" type="button"><i class="fa-solid fa-minus"></i></button></div></div> </div>');
+            $('.selectpicker').selectpicker('reresh')
+        });
+        $(document).on('click', '#remove_btn', function () {
+            $(this).closest('#parent2').remove();
+        });
+    });
+</script>
+
+<script>$(document).ready(function () {
+    $("#add_btn1").click(function () {
+        $("#parent").append('<div class="row mb-2 banking-parent" id="parent3"><div class="col-md-12"><div class="purchasegrp"><label for="sub" class="purchaseinfo mb-1"><span class="aster">*</span>Group criteria</label><select class="selectpicker form-control" data-live-search="true" name="gc" title="None Selected"><option value="0">Description</option><option value="1">Amount</option></select></div></div><div id="parent4" class="row addfrm" ><div  class="row mb-2 banking-parent"><div class="col-md-3"><div class="purchasegrp"><label for="sub" class="purchaseinfo mb-1 evlcr" ><span class="aster">*</span>Evaluation criteria</label><select class="selectpicker form-control" data-live-search="true" name="ec"><option value="0">Description</option><option value="1">Amount</option></select></div></div><div class="col-md-3"><div class="purchasegrp"><label class="purchaseinfo"><span class=" aster">* </span>Proportion(%)</label><input type="number" class="form-control purchaseselects"></div></div><div class="col-md-1"><div class="purchasegrp"><button id="add_btn2" name="add" class="ctctgrnbtn banking-plus-btn btmrg" data-ticket="true" type="button"><i class="fa fa-plus"></i></button></div></div></div></div></div><div class="col-md-1"><div class="purchasegrp "><button id="remove_btn1" name="add" class="closexbtn banking-min-btn " data-ticket="true"type="button"><i class="fa-solid fa-minus"></i></button></div></div>');
+        $('.selectpicker').selectpicker('reresh')
+    });
+    $(document).on('click', '#remove_btn1', function () {
+        $(this).closest('#parent3').remove();
+    });
+
+});
+</script>
+
+
+
+
+
+<script>
+    $('#evlfrm').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            fname: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required.'
+                    }
+                }
+            },
+            gc: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required.'
+                    }
+                }
+            },
+            ec: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required.'
+                    }
+                }
+            },
+            pro: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required.'
+                    }
+                }
+            },
+
+        }
+    })
+
+</script>

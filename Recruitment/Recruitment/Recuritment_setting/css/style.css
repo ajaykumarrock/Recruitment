@@ -1,0 +1,220 @@
+body{
+    background-color: #e3e8ee;
+}
+
+.help-block {
+    margin-left: 10px;
+    color: red;
+}
+.icnmrg{
+    margin-left: -1px;
+    margin-top: 0px;
+}
+.chk-mrg{
+    margin-top: -5px;
+}
+
+.clsheight{
+    height: 31px;
+}
+.h5text{
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+
+}
+
+.hrclr{
+    margin-top: 10px;
+border-bottom: 0.5px solid;
+color: #d8341b;
+}
+.btnmargin{
+    margin-left: 8px;
+    margin-bottom:3px ;
+}
+.tblmargin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+table {
+   overflow-x: scroll;
+   white-space: nowrap;
+}
+@media only screen and (max-width: 768px) {
+    .chk-mrg1{
+        margin-left: 20px;
+        margin-top: -22px;
+    }
+    .mars{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sdt{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tablespace{
+        padding-left: 4px; 
+        padding-right:4px;
+    }
+    .lins{
+        margin-right: -20px!important;
+        margin-left: -20px!important;
+    }
+}
+.tbp{
+    padding-left: 9px;
+}
+.tabss{
+    display:block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.btpad{
+    margin-left: -1px;
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #03A9F4;
+}
+.btpads{
+    margin-left: 9px;
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #03A9F4;
+}
+.liness{
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.rowtop{
+    margin-top: -10px;
+}
+.flow{
+    overflow-x: auto;
+}
+.ttb{
+    display:none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.colpad{
+    padding-left: 3px; 
+    padding-right:3px;
+}
+.dis{
+    display:none;
+}
+.line2{
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.hs{
+    margin-top: -1px;
+}
+.dropwidth{
+    max-width: 880px !important;
+}
+.rowtop1{
+    margin-top: -5px;
+}
+.save1{
+    margin-right: 0px;
+    background-color: #03A9F4!important;
+}
+.save2{
+    margin-right: -1px;
+    background-color: #03A9F4!important;
+}
+.more{
+    padding-right: 15px !important;
+}
+.fixs{
+    position: relative;
+    padding-right:9px; 
+    padding-left:9px;
+}
+.tdwidth{
+    width:80%;
+}
+.h5text1{
+    margin-top: 15px;
+    color: #d81b60;
+font-weight: bold;
+
+}
+.h5text2{
+    font-weight: bold;   
+    color: #d81b60;
+
+}
+.hrclr1{
+    border: 0.5px solid;
+color: #d81b60;
+}
+.banking-min-btn{
+    margin-left: 0px;
+    margin-top: 35px;
+}
+.hrline2{
+    margin-top: -1px;
+}
+.addfrm{
+    margin-left: 35px;
+    margin-right: 50px;
+}
+.evlcr{
+    line-height: 1.7;
+}
+.btmrg{
+    margin-top: 33px;
+}
+.save3{
+   margin-left: 0px;
+   
+}
+.marrt{
+    margin-right: -20px;
+}
+.marlt{
+    margin-left:35px;
+}
+.addjb{
+    margin-top: 6px;
+}
+.rmtop{
+    margin-top: 25px;
+}
+.icn-mrg{
+    margin-left: 2px;
+}
+.mar15{
+    margin-top: -15px;
+}
+.zeropdP{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.selct{
+    line-height: 2px
+}
+.margn2{
+    margin-top: 2px;
+}
+.marg4{
+    margin-bottom: 4px;
+}
+.margs5{
+    margin-top: 0px;
+}
+.rebt{
+    margin-top: 32px;
+}
+.exline{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.wordsp{
+    padding-left: 14px;
+}

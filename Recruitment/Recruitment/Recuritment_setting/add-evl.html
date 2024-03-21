@@ -1,0 +1,167 @@
+
+<form action="" id="bow">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="func" class="purchaseinfo mb-1"><span class=" aster">* </span>Criteria type</label>
+                <select id="func" class="selectpicker form-control" title="None Selected" name="PayAcc" onchange="myFunction()">
+                    <option value="0"></option>
+                    <option value="Criteria">Criteria</option>
+                    <option value="Group Criteria">Group Criteria</option>
+                   
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo"><span class=" aster">* </span>
+                    Criteria name</label>
+                    <input type="text" class="form-control purchaseselects" name="PayAcc">
+            </div>
+        </div>
+    </div>
+    
+    <div id="gc" class="row " style="display:none;">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="tags" class="purchaseinfo"><span class=" aster">* </span>
+                    Group Criteria</label>
+                    <input type="text" class="form-control purchaseselects" name="PayAcc">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label class="emailpro ">Description</label>
+                <textarea class="textdesc " rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-md-12 fixs" > 
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <td>
+                            Scores
+                        </td> 
+                        <td>
+                            Score Description
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="more">
+                            <input type="text" class="form-control purchaseselects" disabled="true" value="Score 1 ">
+                        </td>
+                        <td class="tdwidth">
+                            <input type="text" class="form-control purchaseselects" placeholder="Write a score description for this criterion">
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="more">
+                            <input type="text" class="form-control purchaseselects" disabled="true" value="Score 2 ">
+                        </td>
+                        <td class="tdwidth">
+                            <input type="text" class="form-control purchaseselects" placeholder="Write a score description for this criterion">
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="more">
+                            <input type="text" class="form-control purchaseselects" disabled="true" value="Score 3 ">
+                        </td>
+                        <td class="tdwidth">
+                            <input type="text" class="form-control purchaseselects" placeholder="Write a score description for this criterion">
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="more">
+                            <input type="text" class="form-control purchaseselects" disabled="true" value="Score 4 ">
+                        </td>
+                        <td class="tdwidth">
+                            <input type="text" class="form-control purchaseselects" placeholder="Write a score description for this criterion">
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="more">
+                            <input type="text" class="form-control purchaseselects" disabled="true" value="Score 5 ">
+                        </td>
+                        <td class="tdwidth">
+                            <input type="text" class="form-control purchaseselects" placeholder="Write a score description for this criterion">
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 blkftr">
+            <div class="modal-footer taskfooter">
+                <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                    CLOSE
+                </button>
+                <button type="submit" class="tasksave1 save1" >SAVE</button>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    $('#bow').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            PayAcc: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required'
+                    }
+                }
+            },
+
+
+        }
+    })
+
+</script>
+<script>
+   
+    var gcs = document.getElementById("gc");
+
+    function myFunction(){
+
+        var x = document.getElementById("func").value;
+
+       
+    if (x === "Criteria") {
+        gcs.style.display = "block";
+      
+
+    } 
+    else if (x === "Group Criteria"){
+        gcs.style.display = "none";
+
+    }
+    
+    
+    
+    
+}
+    
+</script>

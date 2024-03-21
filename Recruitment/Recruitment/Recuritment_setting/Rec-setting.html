@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CRM</title>
+        <!--Bootstrap 5 CSS--->
+        <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" >
+    
+        <!--Bootstrap 5 JS--->
+        <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+    
+        <!--Bootstrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" >
+    
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+    
+        <!--datatables CSS--->
+        <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" >
+        <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" >
+        <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" >
+    
+        <!--Datatables js-->
+        <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="./datatable/datatable.js"></script>
+        <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+    
+        <!--Datatable dropdown----->
+        <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+        <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+        <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+    
+        <!--Dropdown select-->
+        <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" >
+        <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+    
+        <!--summernote_textarea-->
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    
+        <!-- CSS --><!-- validation -->
+        <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+        <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+    
+        <link rel="stylesheet" href="../../assets/css/style.css" >
+      
+        <link rel="stylesheet" href="../../Recruitment/Recuritment_setting/css/style.css">   
+
+        
+
+    </head>
+    <body >
+        <div id="wrapper">
+            <div class="row m-2 gy-3">
+                <div class="col-md-3">
+                    <div class="tblcontainer tabspace bg-white exline" >
+                        <div class="tab1">
+                            <ul class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked  " onclick="opentab(event, 'job')">
+                                <li role="presentation" class="tab_cart my-2  ">  
+                                    <button class="tablinks1 wordsp  active" type="button" >  
+                                        Job position</button>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked " onclick="opentab(event, 'crt')">
+                                <li role="presentation" class="tab_cart my-1 text-primary fw-bold active">
+                                    
+                                    <button class="tablinks1 wordsp" type="button"  >
+                                      
+                                       Evaluation criteria
+                                    </button>
+                                </li>
+                            </ul>
+                        
+                            <ul class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked " onclick="opentab(event, 'form')">
+                                <li role="presentation" class="tab_cart my-2">
+                                    
+                                    <button class="tablinks1 wordsp" >
+                                    
+                                        Evaluation form</button>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked" onclick="opentab(event, 'process')">
+                                <li role="presentation" class="tab_cart my-2">
+                                    
+                                    <button class="tablinks1 wordsp">
+                                      On-Boarding process</button>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked" onclick="opentab(event, 'skill')">
+                                <li role="presentation" class="tab_cart my-2">
+                                    
+                                    <button class="tablinks1 wordsp" >
+                                        Skills</button>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked"  onclick="opentab(event, 'list1')">
+                                <li role="presentation" class="tab_cart my-2">
+                                   
+                                    <button class="tablinks1 wordsp" >
+                                        Company List</button>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-pills navbar-pills-flat nav-tabs nav-stacked" onclick="opentab(event, 'list2')">
+                                <li role="presentation" class="tab_cart my-2">
+                                    
+                                    <button class="tablinks1 wordsp" >
+                                        Industry list</button>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-pills navbar-pills-flat  nav-stacked" onclick="opentab(event, 'setting')">
+                                <li role="presentation" class="tab_cart my-2">
+                                    
+                                    <button class="tablinks1 wordsp" >
+                                        Other settings</button>
+                                </li>
+                            </ul>
+                
+                           
+                        </div>
+                     
+                    </div>
+    
+                    
+                </div>
+                <div class="col-md-9 ">
+                    <div class="tblcontainer tabspace bg-white tbp" >
+                        <!--Job position-->
+                        <div id="job" class="tabcontent ps-0 tabss">
+                            <div class="row" >
+                                <div class="col-md-12">
+                                    <button type="submit" class="hrbtns contractbtn btnmargin btpad"
+                                    onclick="showModal('add-job.html','New position')"  >NEW POSITION</button>
+                                </div>
+                            </div>
+                            <hr class="fileline liness" >
+                            <div class="row rowtop" >
+                                <div class="col-md-12" >
+                                    <div class="demo-html mt-0 flow" >
+                                        <table class="example2 display dataTable display responsive nowrap tblalign"
+                                            style="width: 100%;" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        ID  
+                                                    </th>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Job position
+                                                    </th>
+                                                    <th class="sorting sorting_asc" >
+                                                       Industry
+                                                    </th>
+                                                    <th class="sorting" >
+                                                        Options
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Teacher</td>
+                                                    <td>Plus size modeling</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>LINUX ADMIN</td>
+                                                    <td>Teen modeling</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>tt</td>
+                                                    <td>Petite modeling</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Production Manager</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>desktop support engineer</td>
+                                                    <td>IT</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td></td>
+                                                    <td>Teen modeling</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>rueba</td>
+                                                    <td>Plus size modeling</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>rueba</td>
+                                                    <td>High fashion modeling</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>Job Position</td>
+                                                    <td>Mature modeling</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>UI/UX</td>
+                                                    <td>IT</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>call center</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-job.html','Edit Position')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                         <!--Evalution criteria-->
+                         <div id="crt" class="tabcontent ps-0 ttb" >
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="hrbtns contractbtn btnmargin btpad"
+                                    onclick="showModal('add-evl.html',' New evaluation criteria')" >NEW EVALUATION CRITERIA</button>
+                                </div>
+                            </div>
+                            <hr class="fileline liness">
+                            <div class="row rowtop" >
+                                <div class="col-md-12" >
+                                    <div class="demo-html mt-0 flow" >
+                                        <table class="example2 display dataTable display responsive nowrap tblalign"
+                                            style="width: 100%;" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Added by
+                                                    </th>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Criteria name
+                                                    </th>
+                                                    <th class="sorting sorting_asc" >
+                                                        Type
+                                                    </th>
+                                                    <th class="sorting" >
+                                                        Added date
+                                                    </th>
+                                                    <th class="sorting" >
+                                                        Options
+                                                    </th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td><i class="fa fa-folder-open"></i>  Personality</td>
+                                                    <td>Group criteria</td>
+                                                    <td>2022-10-15</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-evl.html',' Edit evaluation criteria')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>Ethics</td>
+                                                    <td>criteria</td>
+                                                    <td>2022-10-15</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-evl.html',' Edit evaluation criteria')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>Behavior</td>
+                                                    <td>criteria</td>
+                                                    <td>2022-10-15</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-evl.html',' Edit evaluation criteria')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>Personality 3</td>
+                                                    <td>criteria</td>
+                                                    <td>2022-01-30</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-evl.html',' Edit evaluation criteria')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>p</td>
+                                                    <td>criteria</td>
+                                                    <td>2022-03-29</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-evl.html',' Edit evaluation criteria')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td><i class="fa fa-folder-open"></i>  ELG-Criteria Name2</td>
+                                                    <td>Group criteria</td>
+                                                    <td>2022-10-15</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-evl.html',' Edit evaluation criteria')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>ELG-Criteria Name #3</td>
+                                                    <td>criteria</td>
+                                                    <td>2022-10-15</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-evl.html',' Edit evaluation criteria')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <!--Evalution form-->
+                         <div id="form"  class="tabcontent ps-0 ttb" >
+                            <div class="row">
+                                <div class="col-md-12">
+                                    
+                                    <button type="submit" class="hrbtns contractbtn btnmargin btpad"
+                                    onclick="showModal('add-form.html',' New evaluation form')" >NEW EVALUATION FORM</button>
+                                </div>
+                            </div>
+                            <hr class="fileline liness" >
+                            <div class="row rowtop">
+                                <div class="col-md-12 colpad"  >
+                                    <div class="demo-html mt-0 tblmargin flow">
+                                        <table class="example1 display dataTable display responsive nowrap tblalign"
+                                            style="width: 100%;" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Added by
+                                                    </th>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                      Form Name
+                                                    </th>
+                                                    <th class="sorting sorting_asc" >
+                                                      Position
+                                                    </th>
+                                                    <th class="sorting" >
+                                                       Number of criteria
+                                                    </th>
+                                                    <th class="sorting" >
+                                                        Added date
+                                                    </th>
+                                                    <th class="sorting">
+                                                        Options
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>ELG-Form Name</td>
+                                                    <td>All</td>
+                                                    <td>5</td>
+                                                    <td>2022-10-15</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-form.html',' Edit evaluation form')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>Test 2</td>
+                                                    <td>All</td>
+                                                    <td>1</td>
+                                                    <td>2023-03-06</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-form.html',' Edit evaluation form')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>developer</td>
+                                                    <td>LINUX ADMIN</td>
+                                                    <td>3</td>
+                                                    <td>2023-08-31</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-form.html',' Edit evaluation form')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>test</td>
+                                                    <td>All</td>
+                                                    <td>1</td>
+                                                    <td>2023-09-16</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-form.html',' Edit evaluation form')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>form 1</td>
+                                                    <td>All</td>
+                                                    <td>3</td>
+                                                    <td>2023-10-21</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-form.html',' Edit evaluation form')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Onboarding process-->
+                        <div id="process" class="tabcontent ps-0 sdt dis" >
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="hrbtns contractbtn btnmargin btpads"
+                                    onclick="showModal('add-process.html',' New step')"  >NEW</button>
+                                </div>
+                            </div>
+                            <hr class="fileline lins line2" >
+                            <div class="row rowtop" >
+                                <div class="col-md-12 tablespace" >
+                                    <div class="demo-html mt-0 tblmargin" style="overflow-x: auto;">
+                                        <table class="example3 display dataTable display responsive nowrap tblalign"
+                                            style="width: 100%" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Subject
+                                                    </th>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                     Added by
+                                                    </th>
+                                                    <th class="sorting sorting_asc" >
+                                                       Added date
+                                                    </th>
+                                                    <th class="sorting" >
+                                                       Options
+                                                    </th>
+                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>New ELG candidate hired</td>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>2022-10-15</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-process.html','Edit setting of transfer personnel record')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Right to Work Validation</td>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>2023-11-21</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-process.html','Edit setting of transfer personnel record')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>工装发放</td>
+                                                    <td>
+                                                        <img src="../../assets/img/user-placeholder.jpg" height="32px" width="32px"><a href="gts.html"> GTS Solutions</a>
+                                                    </td>
+                                                    <td>2023-04-06</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-process.html','Edit setting of transfer personnel record')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Skills-->
+                        <div id="skill" class="tabcontent ps-0 sdt dis" >
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="hrbtns contractbtn btnmargin btpads"
+                                    onclick="showModal('add-skill.html',' New skill')" >NEW SKILL</button>
+                                </div>
+                            </div>
+                            <hr class="fileline lins line2" >
+                            <div class="row rowtop" >
+                                <div class="col-md-12 tablespace" >
+                                    <div class="demo-html mt-0 tblmargin flow" >
+                                        <table class="example4 display dataTable display responsive nowrap tblalign"
+                                            style="width: 100%" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        ID
+                                                    </th>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Skill name
+                                                    </th>
+                                                    <th class="sorting">
+                                                        Options
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Posing</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Runway</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Communication</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Poise</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Networking</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Organization</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>Stamina</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>ELG Skill</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>13</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td>LINUX</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td>Production</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td>Hardware networking</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>potentiel</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                    <td>20</td>
+                                                    <td>PHP</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-skill.html','Edit skill')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                   
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Company list-->
+                        <div id="list1" class="tabcontent ps-0 sdt dis" >
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="hrbtns contractbtn btnmargin btpads"
+                                    onclick="showModal('add-cmp.html',' New company')" >NEW COMPANY</button>
+                                </div>
+                            </div>
+                            <hr class="fileline lins line2" >
+                            <div class="row rowtop" >
+                                <div class="col-md-12 tablespace" >
+                                    <div class="demo-html mt-0 tblmargin flow">
+                                        <table class="example4 display dataTable display responsive nowrap tblalign"
+                                            style="width: 100%" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Company Name
+                                                    </th>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Company address
+                                                    </th>
+                                                    <th class="sorting sorting_asc" >
+                                                       Company industry
+                                                    </th>
+                                                  
+                                                    <th class="sorting">
+                                                        Options
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>ElG Company Name</td>
+                                                    <td>athens</td>
+                                                    <td>Web Dev</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-cmp.html',' Edit company')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>mby factory</td>
+                                                    <td>Sakarya</td>
+                                                    <td>call</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-cmp.html',' Edit company')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Serv</td>
+                                                    <td>test</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-cmp.html',' Edit company')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tech2globe</td>
+                                                    <td>nsp</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-cmp.html',' Edit company')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terminator Ltde</td>
+                                                    <td>Sydney</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-cmp.html',' Edit company')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Win Education</td>
+                                                    <td>Pham Ngu Lao street, Ho Chi Minh City</td>
+                                                    <td>Education</td>
+                                                    <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-cmp.html',' Edit company')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!--Industry list-->
+                        <div id="list2" class="tabcontent ps-0 sdt dis" >
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="hrbtns contractbtn btnmargin btpads"
+                                    onclick="showModal('add-ind.html','New industry')" >NEW INDUSTRY</button>
+                                </div>
+                            </div>
+                            <hr class="fileline lins line2"  >
+                            <div class="row rowtop"  >
+                                <div class="col-md-12 tablespace" >
+                                    <div class="demo-html mt-0 tblmargin">
+                                        <table class="example4 display dataTable display responsive nowrap tblalign"
+                                            style="width: 100%" aria-describedby="example_info">
+                                            <thead class="theadrow">
+                                                <tr>
+                                                    <th class="select-checkbox sorting_disabled" >
+                                                        Industry name
+                                                    </th>
+                                                   
+                                                    
+                                                    <th class="sorting">
+                                                        Options
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Body part modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Character modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Desarrollo WEB</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ELG web dev</td>
+                                                   <td> 
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Glamour modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>High fashion modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>IT</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mature modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Petite modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Plus size modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"><i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Teen modeling</td>
+                                                   <td>
+                                                        <button type="button" class="editpenbtn"  onclick="showModal('edit-ind.html','Edit industry')" data-bs-toggle="tooltip"  data-bs-title="Edit"> <i class="fa fa-edit"></i></button>
+                                                        <button class="closexbtn clsheight" data-bs-toggle="tooltip"  data-bs-title="Delete"><i class="fa fa-remove"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!--Other setting-->
+                        <div id="setting" class="tabcontent ps-0 tblmargin dis" >
+                           <div class="row ">
+                            <div class="col-md-12">
+                                <h5 class="h5text h5text1">Recruitment Plan</h5>
+                            </div>
+                           </div>
+                           <hr class="hrclr hs" >
+                           <div class="row ">
+                                <div class="col-md-12">
+                                    <input class="form-check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label px-1 chk-mrg" for="flexCheckDefault">
+                                        Show recruitment plan <a href="#" class="display-block input_method"><i class="fa fa-question-circle i_tooltip icnmrg" data-bs-toggle="tooltip" title="" data-bs-title="Allow to create recruitment plan when creating recruitment campaign"></i></a>
+                                    </label>
+                                   
+                                </div>
+                           </div>
+                           <br>
+                           <div class="row ">
+                            <div class="col-md-12">
+                                <h5 class="h5text h5text2">Recruitment campaign</h5>
+                            </div>
+                           </div>
+                           <hr class="hrclr hs" >
+                           <div class="row">
+                            <div class="col-md-12">
+                                <input class="form-check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label px-1 chk-mrg chk-mrg1" for="flexCheckDefault">
+                                    Display the Quantity to be recruited  on the Recruitment Portal
+                                    <a href="#" class="display-block input_method"><i class="fa fa-question-circle i_tooltip icnmrg" data-bs-toggle="tooltip" title="" data-bs-title="Allow to create recruitment plan when creating recruitment campaign"></i></a>
+                                </label>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                       </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    
+    <!---Modal---->
+    <div class="modal fade" id="modal_md" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ModalFunction-->
+    <script>
+        function showModal(url, title) {
+
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+    </script>
+    <!--Datatable-->
+      <script>
+        $(document).ready(function () {
+            $('.example').DataTable({
+                language: { lengthMenu: "_MENU_" },
+                responsive: true,
+                dom: 'Bfltip',
+                buttons: [
+                    {
+                        text: "EXPORT",
+                        extend: "collection",
+                        buttons: ["excel", "csv", "pdf", "print"],
+                        className: "px-3",
+                    },
+                ]
+            });
+            table.columns.adjust().draw();
+            table.column(0).nodes().each(function (cell, i) {
+                cell.innerHTML = '<input type="checkbox" class="checkbox" >';
+            });
+            $(document).on('click', 'input[type="checkbox"]', function () {
+                // Reference the checkbox that was clicked
+                var checkbox = $(this);
+
+                // Find the nearest parent row of the checkbox
+                var row = checkbox.closest('tr');
+
+                // Toggle a class on the row based on the checkbox's checked state
+                // if (checkbox.is(':checked')) {
+                //     row.addClass('selected');
+                // } else {
+                //     row.removeClass('selected');
+                // }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.example1').DataTable({
+                language: { lengthMenu: "_MENU_" },
+                responsive: true,
+                dom: 'Bfltip',
+                buttons: [
+                    {
+                        text: "EXPORT",
+                        extend: "collection",
+                        buttons: ["excel", "csv", "pdf", "print"],
+                        className: "px-3",
+                    },
+                ]
+            });
+            table.columns.adjust().draw();
+            table.column(0).nodes().each(function (cell, i) {
+                cell.innerHTML = '<input type="checkbox" class="checkbox" >';
+            });
+            $(document).on('click', 'input[type="checkbox"]', function () {
+                // Reference the checkbox that was clicked
+                var checkbox = $(this);
+
+                // Find the nearest parent row of the checkbox
+                var row = checkbox.closest('tr');
+
+                // Toggle a class on the row based on the checkbox's checked state
+                // if (checkbox.is(':checked')) {
+                //     row.addClass('selected');
+                // } else {
+                //     row.removeClass('selected');
+                // }
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function () {
+            $('.example2').DataTable({
+                language: { lengthMenu: "_MENU_" },
+                responsive: true,
+                dom: 'Bfltip',
+                buttons: [
+                    {
+                        text: "EXPORT",
+                        extend: "collection",
+                        buttons: ["excel", "csv", "pdf", "print"],
+                        className: "px-3",
+                    },
+                ]
+            });
+            table.columns.adjust().draw();
+            table.column(0).nodes().each(function (cell, i) {
+                cell.innerHTML = '<input type="checkbox" class="checkbox" >';
+            });
+            $(document).on('click', 'input[type="checkbox"]', function () {
+                // Reference the checkbox that was clicked
+                var checkbox = $(this);
+
+                // Find the nearest parent row of the checkbox
+                var row = checkbox.closest('tr');
+
+                // Toggle a class on the row based on the checkbox's checked state
+                // if (checkbox.is(':checked')) {
+                //     row.addClass('selected');
+                // } else {
+                //     row.removeClass('selected');
+                // }
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function () {
+                $('.example3').DataTable({
+                    language: { lengthMenu: "_MENU_" },
+                    responsive: true,
+                    dom: 'Bfltip',
+                    buttons: [
+                        {
+                            text: "EXPORT",
+                            extend: "collection",
+                            buttons: ["excel", "csv", "pdf", "print"],
+                            className: "px-3",
+                        },
+                    ]
+                });
+                table.columns.adjust().draw();
+                table.column(0).nodes().each(function (cell, i) {
+                    cell.innerHTML = '<input type="checkbox" class="checkbox" >';
+                });
+                $(document).on('click', 'input[type="checkbox"]', function () {
+                    // Reference the checkbox that was clicked
+                    var checkbox = $(this);
+    
+                    // Find the nearest parent row of the checkbox
+                    var row = checkbox.closest('tr');
+    
+                    // Toggle a class on the row based on the checkbox's checked state
+                    // if (checkbox.is(':checked')) {
+                    //     row.addClass('selected');
+                    // } else {
+                    //     row.removeClass('selected');
+                    // }
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.example4').DataTable({
+                language: { lengthMenu: "_MENU_" },
+                responsive: true,
+                dom: 'Bfltip',
+                buttons: [
+                    {
+                        text: "EXPORT",
+                        extend: "collection",
+                        buttons: ["excel", "csv", "pdf", "print"],
+                        className: "px-3",
+                    },
+                ]
+            });
+            table.columns.adjust().draw();
+            table.column(0).nodes().each(function (cell, i) {
+                cell.innerHTML = '<input type="checkbox" class="checkbox" >';
+            });
+            $(document).on('click', 'input[type="checkbox"]', function () {
+                // Reference the checkbox that was clicked
+                var checkbox = $(this);
+
+                // Find the nearest parent row of the checkbox
+                var row = checkbox.closest('tr');
+
+                // Toggle a class on the row based on the checkbox's checked state
+                // if (checkbox.is(':checked')) {
+                //     row.addClass('selected');
+                // } else {
+                //     row.removeClass('selected');
+                // }
+            });
+        });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.example5').DataTable({
+            language: { lengthMenu: "_MENU_" },
+            responsive: true,
+            dom: 'Bfltip',
+            buttons: [
+                {
+                    text: "EXPORT",
+                    extend: "collection",
+                    buttons: ["excel", "csv", "pdf", "print"],
+                    className: "px-3",
+                },
+            ]
+        });
+        table.columns.adjust().draw();
+        table.column(0).nodes().each(function (cell, i) {
+            cell.innerHTML = '<input type="checkbox" class="checkbox" >';
+        });
+        $(document).on('click', 'input[type="checkbox"]', function () {
+            // Reference the checkbox that was clicked
+            var checkbox = $(this);
+
+            // Find the nearest parent row of the checkbox
+            var row = checkbox.closest('tr');
+
+            // Toggle a class on the row based on the checkbox's checked state
+            // if (checkbox.is(':checked')) {
+            //     row.addClass('selected');
+            // } else {
+            //     row.removeClass('selected');
+            // }
+        });
+    });
+</script>
+        <!-- Tabs--->
+        <script>
+            function opentab(evt, tabName) {
+              var i, tabcontent, tablinks1;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks1 = document.getElementsByClassName("tablinks1");
+              for (i = 0; i < tablinks1.length; i++) {
+                tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+              }
+        
+            //   document.querySelector(".active")?.classList.remove("active");
+              evt.currentTarget.children[0].children[0].classList.add("active");
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
+           <!--Tooltip-->
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+        </script>
+    </body>
+</html>

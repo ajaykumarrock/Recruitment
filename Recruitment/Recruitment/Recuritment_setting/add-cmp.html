@@ -1,0 +1,149 @@
+
+<form action="" id="compform">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label for="unitname" class="purchaseinfo"> <span class=" aster">* </span>
+                    Company Name</label>
+                    <input type="text" class="form-control purchaseselects" name="cname">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label class="emailpro "><span class=" aster">* </span>Company Address</label>
+                <textarea class="textdesc  " rows="4" name="cadd"></textarea>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row rowtop1" >
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label class="emailpro ">Company Industry</label>
+                <textarea class="textdesc  " rows="4"></textarea>
+            </div>
+        </div>
+        
+    </div>
+  
+    <div class="row rowtop1" >
+        <div class="col-md-12">
+            <div class="purchasegrp">
+                <label class="emailpro ">Company images</label>
+                <div id="drop-zone" class="dropwidth">
+                    <img src="" alt="">
+                    <p class="dropfile">Drop file or click to upload</p>
+                    <label for="myfile" class="file-input-label">
+                        <input type="file" id="myfile">
+                    </label>
+                </div>
+                <div class="text-container">
+                    <div class="file-name"></div>
+                    <button class="delete-button btn-danger" id="deleteBtn">Delete</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-12 blkftr">
+            <div class="modal-footer taskfooter">
+                <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                    CLOSE
+                </button>
+                <button type="submit" class="tasksave1 save1" >SAVE</button>
+            </div>
+        </div>
+    </div>
+</form>
+   <!--upload-files-->
+
+   <script>
+    const dropZone = document.querySelector('#drop-zone');
+    const inputElement = document.querySelector('#myfile');
+    const img = document.querySelector('img');
+    const p = document.querySelector('.dropfile');
+    const fileNameElement = document.querySelector('.file-name');
+    const deleteButton = document.querySelector('#deleteBtn');
+
+    inputElement.addEventListener('change', function (e) {
+        const file = this.files[0];
+        if (file) {
+            img.style.display = "block";
+            p.style.display = 'none';
+            fileNameElement.textContent = file.name;
+            deleteButton.style.display = 'inline-block';
+
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onloadend = function () {
+                const src = this.result;
+                img.src = src;
+                img.alt = file.name;
+            }
+        }
+    });
+
+    dropZone.addEventListener('click', () => inputElement.click());
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        img.style.display = "block";
+        const file = e.dataTransfer.files[0];
+        // p.style.display = 'none';
+
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onloadend = function () {
+            e.preventDefault();
+            p.style.display = 'none';
+            fileNameElement.textContent = file.name;
+            deleteButton.style.display = 'inline-block';
+
+            const src = this.result;
+            img.src = src;
+            img.alt = file.name;
+        }
+    });
+
+    deleteButton.addEventListener('click', () => {
+        img.src = '';
+        img.style.display = 'none';
+        p.style.display = 'block';
+        fileNameElement.textContent = '';
+        deleteButton.style.display = 'none';
+        inputElement.value = '';
+    });
+</script>
+<script>
+    $('#compform').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            cname: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required.'
+                    }
+                }
+            },
+            cadd: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required.'
+                    }
+                }
+            },
+ 
+
+        }
+    })
+
+</script>
